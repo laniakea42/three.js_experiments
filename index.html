@@ -37,7 +37,7 @@
 		scene.add(camera);
 
 		//create box
-		let boxGeometry = new THREE.BoxGeometry(10,10,10);
+		let boxGeometry = new THREE.BoxGeometry(8,8,8);
 		let basicMaterial = new THREE.MeshBasicMaterial({color: 0x0095dd});
 
 		// add materia to geometry
@@ -46,11 +46,11 @@
 		scene.add(cube);
 
 		cube.rotation.set(.4, .2, 0);
-		cube.position.x = -25;
+		cube.position.x = -15;
 
 
 		//create torus
-		let torusGeometry = new THREE.TorusGeometry(7,1,6,12);
+		let torusGeometry = new THREE.TorusGeometry(5.5,1,15,40);
 		let phongMaterial = new THREE.MeshPhongMaterial({color: 0xFF9500});
 		let torus = new THREE.Mesh(torusGeometry, phongMaterial);
 
@@ -59,10 +59,10 @@
 
 
 		//create dodecahedron
-		let dodecahedronGeometry = new THREE.DodecahedronGeometry(7);
+		let dodecahedronGeometry = new THREE.DodecahedronGeometry(6);
 		let lamberMaterial = new THREE.MeshLambertMaterial({color: 0xeaeff2});
 		let dodecahedron = new THREE.Mesh(dodecahedronGeometry, lamberMaterial);
-		dodecahedron.position.x = 25;
+		dodecahedron.position.x = 15;
 
 		scene.add(dodecahedron);
 
